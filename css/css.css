@@ -1,0 +1,116 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.has-text-shadow {
+    text-shadow: 1px 1px 2px black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.logo {
+
+    background-color: #417154;
+}
+
+.logo img {
+
+    max-height: none;
+
+}
+
+.logo p {
+    color: #60E6A7;
+
+}
+
+.navbar {
+    background-color: #417154;
+
+}
+
+
+
+.navbar-item {
+    color: #60E6A7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    transition: all ease 0.3s;
+}
+
+.hero-body {
+    background-image: url("../../images/header.jpeg");
+    object-fit: cover;
+}
+
+a.navbar-item:hover {
+    background-color: #60E6A7;
+    color: #417154;
+}
+
+.button {
+    background-color: yellow;
+}
+
+.button {
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: #417154;
+    border: #ffffff solid 2px;
+    z-index: 1;
+    transition: transform 300ms ease-in-out, color 600ms ease-in-out;
+    overflow: hidden;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ffffff;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 600ms ease-in-out;
+    border-radius: inherit;
+}
+
+.button:hover::before,
+.button:focus::before {
+    transform: scaleX(1);
+    transition: transform 600ms ease-in-out;
+
+}
+
+.button:hover {
+    color: #417154;
+}
+
+.content {
+    background-color: #417154;
+    margin-bottom: auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-left: 15px;
+}
+
+.column a {
+    color: #60E6A7;
+    transition: all ease-in-out 0.3s;
+}
+
+.column a:hover {
+    padding-left: 15px;
+}
